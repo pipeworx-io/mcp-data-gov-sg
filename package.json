@@ -1,0 +1,20 @@
+{
+  "name": "@pipeworx/mcp-data-gov-sg",
+  "version": "0.1.0",
+  "description": "data.gov.sg MCP — Singapore open data + real-time environment/transport feeds",
+  "type": "module",
+  "main": "src/index.ts",
+  "types": "src/index.ts",
+  "keywords": ["mcp", "mcp-server", "model-context-protocol", "pipeworx", "data-gov-sg"],
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/pipeworx-io/mcp-data-gov-sg"
+  },
+  "scripts": {
+    "typecheck": "tsc --noEmit"
+  },
+  "devDependencies": {
+    "typescript": "^5.7.0"
+  }
+}
