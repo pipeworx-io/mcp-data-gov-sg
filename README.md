@@ -1,22 +1,29 @@
-# mcp-data-gov-sg
+# @pipeworx/data-gov-sg
 
-data.gov.sg MCP — Singapore open data + real-time environment/transport feeds
+Singapore data.gov.sg MCP — open government data (~2000 datasets covering population, economy, transport, environment) + real-time feeds. No auth.
 
-Part of [Pipeworx](https://pipeworx.io) — an MCP gateway connecting AI agents to 673+ live data sources.
+Part of [Pipeworx](https://pipeworx.io) — an MCP gateway connecting AI agents to 1394+ live data sources.
 
 ## Tools
 
-| Tool | Description |
-|------|-------------|
-| `search_datasets` | Browse / search the data.gov.sg dataset catalog. |
-| `get_dataset` | Dataset metadata + column schema. |
-| `query_dataset` | Fetch rows from a dataset. Supports limit, offset, and filter map (column → value). |
-| `weather_now` | Current temperature, humidity, wind, rain across Singapore weather stations. |
-| `air_quality_psi` | Current Pollutant Standards Index (PSI) by region (north, south, east, west, central). |
-| `air_quality_pm25` | Current PM2.5 µg/m³ readings by region. |
-| `uv_index` | Current UV index. |
-| `taxi_availability` | Live taxi positions across Singapore. |
-| `traffic_incidents` | Current incidents on expressways and major roads. |
+### Tabular
+- `search_datasets(query?, page?, page_size?)` — browse datasets
+- `get_dataset(dataset_id)` — dataset metadata + schema
+- `query_dataset(dataset_id, limit?, offset?, filters?)` — fetch rows
+
+### Real-time environment
+- `weather_now()` — current temperature, humidity, wind, rain across 50+ weather stations
+- `air_quality_psi()` — PSI air quality readings (5 regions)
+- `air_quality_pm25()` — PM2.5 readings
+- `uv_index()` — current UV index
+
+### Real-time transport
+- `taxi_availability()` — live taxi positions
+- `traffic_incidents()` — current incidents on expressways
+
+## Data source
+
+`https://api-open.data.gov.sg/v2/` — public, keyless.
 
 ## Quick Start
 
@@ -32,7 +39,7 @@ Add to your MCP client (Claude Desktop, Cursor, Windsurf, etc.):
 }
 ```
 
-Or connect to the full Pipeworx gateway for access to all 673+ data sources:
+Or connect to the full Pipeworx gateway for access to all 1394+ data sources:
 
 ```json
 {
@@ -56,7 +63,7 @@ The gateway picks the right tool and fills the arguments automatically.
 
 ## More
 
-- [All tools and guides](https://github.com/pipeworx-io/examples)
+- [Docs and guides](https://pipeworx.io/docs)
 - [pipeworx.io](https://pipeworx.io)
 
 ## License
