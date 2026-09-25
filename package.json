@@ -1,6 +1,6 @@
 {
   "name": "@pipeworx/mcp-data-gov-sg",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "data.gov.sg MCP — Singapore open data + real-time environment/transport feeds",
   "type": "module",
   "main": "src/index.ts",
@@ -26,7 +26,7 @@
     "@cloudflare/workers-types": "^4.20260405.1"
   },
   "pipeworx": {
-    "sourceHash": "v1-0747bb78e73e54e299570b1e3489b767ce74d8bf10eb7a9c572612c4c6ff9ab2",
-    "sourceCommit": "839ab210d969ef7f822cd747ea516f6bb49e9231"
+    "sourceHash": "v1-25540cc685a16ca68bd08a56950fb950a7c12c194c6db7599171c5b90a798c0f",
+    "sourceCommit": "56d3c46c09bb3078ffdbdbca992a93f406bcd382"
   }
 }

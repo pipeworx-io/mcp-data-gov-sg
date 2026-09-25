@@ -3,7 +3,7 @@
   "name": "io.github.pipeworx-io/data-gov-sg",
   "title": "Data Gov Sg",
   "description": "data.gov.sg MCP — Singapore open data + real-time environment/transport feeds",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "websiteUrl": "https://pipeworx.io/packs/data-gov-sg",
   "repository": {
     "url": "https://github.com/pipeworx-io/mcp-data-gov-sg",
